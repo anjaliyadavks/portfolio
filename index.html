@@ -187,7 +187,6 @@
             overflow: hidden;
         }
 
-        /* Animated gradient background */
         .hero-banner::before {
             content: '';
             position: absolute;
@@ -217,7 +216,6 @@
             100% { transform: scale(1.2) translate(30px, -30px); opacity: 1; }
         }
 
-        /* Floating particles */
         .particles {
             position: absolute;
             top: 0;
@@ -255,7 +253,6 @@
             z-index: 1;
         }
 
-        /* Left Content */
         .banner-content {
             animation: fadeInUp 1s ease-out;
         }
@@ -290,7 +287,6 @@
             position: relative;
         }
 
-        /* Typing animation for title */
         .banner-title-wrapper {
             min-height: 50px;
             animation: fadeInUp 0.6s ease-out 0.6s both;
@@ -390,7 +386,6 @@
             box-shadow: 0 8px 30px rgba(108, 99, 255, 0.15);
         }
 
-        /* Right - Stats / Awards */
         .banner-stats {
             display: flex;
             flex-direction: column;
@@ -476,7 +471,6 @@
             font-weight: 400;
         }
 
-        /* Floating Badge */
         .floating-badge {
             position: absolute;
             bottom: 40px;
@@ -964,19 +958,16 @@
 
     <!-- ===== ANIMATED HERO BANNER ===== -->
     <section class="hero-banner" id="home">
-        <!-- Floating Particles -->
         <div class="particles" id="particles"></div>
 
         <div class="container">
             <div class="banner-grid">
-                <!-- Left Content -->
                 <div class="banner-content">
                     <p class="banner-greeting">Hi, I'm</p>
                     <h1 class="banner-name">
                         Swarnanjali <span class="highlight">Kondra</span>
                     </h1>
 
-                    <!-- Typing Animation -->
                     <div class="banner-title-wrapper">
                         <p class="banner-title" id="typing-text">
                             <span id="typed-output"></span><span class="typed-cursor"></span>
@@ -997,7 +988,6 @@
                     </div>
                 </div>
 
-                <!-- Right - Stats / Awards -->
                 <div class="banner-stats">
                     <div class="stat-card">
                         <div class="stat-icon"><i class="fas fa-trophy"></i></div>
@@ -1023,7 +1013,6 @@
                 </div>
             </div>
 
-            <!-- Floating Badge -->
             <div class="floating-badge">
                 <i class="fas fa-microphone-slash"></i> Sound OFF
             </div>
@@ -1293,10 +1282,10 @@
                     <a href="tel:+918919540219">
                         <i class="fas fa-phone"></i> +91 8919540219
                     </a>
-                    <a href="https://github.com/swarnanjali" target="_blank">
+                    <a href="https://github.com/anjaliyadavks/" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="https://linkedin.com/in/swarnanjali" target="_blank">
+                    <a href="https://www.linkedin.com/in/swarnanjali-kondra-a74623259/" target="_blank">
                         <i class="fab fa-linkedin-in"></i> LinkedIn
                     </a>
                 </div>
@@ -1377,7 +1366,6 @@
             }
         }
 
-        // Start typing after page load
         setTimeout(typeEffect, 1000);
 
         // ===== HAMBURGER MENU =====
@@ -1417,7 +1405,7 @@
             });
         });
 
-        // ===== SCROLL ANIMATIONS (Intersection Observer) =====
+        // ===== SCROLL ANIMATIONS =====
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1439,7 +1427,6 @@
             observer.observe(el);
         });
 
-        // Also observe the contact section
         const contactWrap = document.querySelector('.contact-wrap');
         if (contactWrap) {
             contactWrap.style.opacity = '0';
